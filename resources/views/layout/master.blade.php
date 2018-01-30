@@ -37,7 +37,7 @@
 @show()
 </head>
 <body>
-<div id="preloader"></div>
+<!-- <div id="preloader"></div> -->
 @section('header')
 @show()
 @yield('content')
