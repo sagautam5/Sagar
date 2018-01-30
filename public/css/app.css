@@ -49,7 +49,7 @@ body{
 	margin-top: 20px;
 	display: flex;
 	text-align: center;
-	margin-left: 25%;
+	flex-wrap: wrap;
 }
 
 .social li{
@@ -61,36 +61,42 @@ body{
 }
 
 .social li a{
-	width: 60px;
-	padding: 8px 0;
+	width: 30px;
+	padding: 0 0;
 	display: block;
 }
 
 .social-list{
-	text-align: center;
+	text-align: center;	
 }
 
 .social .facebook{
 	background: #3b5998;
+	display:inline-block;
 }
 .social .twitter{
 	background: #00b6f1;
+	display:inline-block;
 }
 .social .instagram{
 	background: #c32aa3;
+	display:inline-block;
 }
 .social .github{
 	background: #999;
+	display:inline-block;
 }
 .social .stack-overflow{
 	background: #f48024;
+	display:inline-block;
 }
 .social .linkedin{
 	background: #007bb6;
+	display:inline-block;
 }
 .social .facebook{
-	max-width: 200px;
-    max-height: 200px;
+	max-width: 100px;
+    max-height: 100px;
     height: auto;
     width: auto;
     border: 2px #3b5998 solid;
@@ -138,22 +144,22 @@ body{
     border-radius: 50%;
 }
 .social .facebook:hover{
-	transform: translate(0, -8px);
+	transform: translate(0, -10px);
 }
 .social .twitter:hover{
-	transform: translate(0, -8px);
+	transform: translate(0, -10px);
 }
 .social .instagram:hover{
-	transform: translate(0, -8px);
+	transform: translate(0, -10px);
 }
 .social .github:hover{
-	transform: translate(0, -8px);
+	transform: translate(0, -10px);
 }
 .social .stack-overflow:hover{
-	transform: translate(0, -8px);
+	transform: translate(0, -10px);
 }
 .social .linkedin:hover{
-	transform: translate(0, -8px);
+	transform: translate(0, -10px);
 }
 
 .fa-facebook{
@@ -177,9 +183,6 @@ body{
 
 .text{
 	text-align: justify;
-}
-body {
-    background: url("/image/background.jpg");
 }
 
 .paragraph-header{
