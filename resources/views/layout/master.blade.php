@@ -58,7 +58,7 @@
 
     </script>
 
-    <!-- Required JavaScript Libraries -->
+  <!-- Required JavaScript Libraries -->
   <script src="{{asset('js/lib/bootstrap/js/bootstrap.min.js')}}"></script>
   <script src="{{asset('js/lib/superfish/hoverIntent.js')}}"></script>
   <script src="{{asset('js/lib/superfish/superfish.min.js')}}"></script>
