@@ -70,8 +70,6 @@
   <!-- Template Specisifc Custom Javascript File -->
   <script src="js/custom.js"></script>
 
-  <script src="js/contactform.js"></script>
-
   <script src="{{ asset('js/app.js') }}"></script>
 @show()
 </body>

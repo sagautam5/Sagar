@@ -553,6 +553,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 #services .service-description {
   margin-left: 80px;
   line-height: 24px;
+  text-align: justify;
+}
+#services .service-quote {
+      font-style: italic;
+      font-size: 16px;
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 30px;
+      margin-top: 15px;
+
 }
 
 /* Subscribe Section
@@ -794,25 +804,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   line-height: 24px;
 }
 
-#contact .form #sendmessage {
-  color: #03C4EB;
-  border: 1px solid #03C4EB;
-  display: none;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-#contact .form #errormessage {
-  color: red;
-  display: none;
-  border: 1px solid red;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
 
 #contact .form #sendmessage.show, #contact .form #errormessage.show, #contact .form .show {
   display: block;

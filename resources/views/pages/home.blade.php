@@ -51,25 +51,25 @@
         <div class="col-md-12">
           <h3 class="section-title"> Services</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+          <p class="service-quote">"We organize our software development process in accordance with your project requirement and time limits."</p>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-desktop"></i></div>
-          <h4 class="service-title"><a href="">Website Design</a></h4>
-          <p class="service-description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-        </div>
-        <div class="col-md-4 service-item">
-          <div class="service-icon"><i class="fa fa-bar-chart"></i></div>
-          <h4 class="service-title"><a href="">Web App Development</a></h4>
-          <p class="service-description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+          <h4 class="service-title"><a href="{{URL::to('web/development')}}">Web development</a></h4>
+          <p class="service-description">We design and build general websites such as static websites, corporate websites and different types of functional websites . . . . <a href="{{URL::to('web/development')}}">read more >> </a></p>
         </div>
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-paper-plane"></i></div>
           <h4 class="service-title"><a href="">Java Programming</a></h4>
           <p class="service-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+        </div>
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-bar-chart"></i></div>
+          <h4 class="service-title"><a href="">Dorwhjber Bosfndj</a></h4>
+          <p class="service-description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
         </div>
       </div>
     </div>
@@ -111,24 +111,42 @@
 
         <div class="col-md-5 col-md-push-2">
           <div class="form">
-            <div id="sendmessage">Your message has been sent. Thank you!</div>
-            <div id="errormessage"></div>
-            <form action="" method="post" role="form" class="contactForm">
+            <form action="{{URL::to('/send/message')}}" method="post" role="form" id="message">
+              
               <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validation"></div>
+                <input type="text" name="name" class="form-control" placeholder="Your Name" value="{{old('email')}}" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                
+                    <span class="help-block">
+                        <strong></strong>
+                    </span>
+                
               </div>
+              
               <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
+                <input type="email" class="form-control" name="email" placeholder="Your Email" value="{{old('email')}}" data-rule="email" data-msg="Please enter a valid email" />
+
+                <span class="help-block">
+                    <strong></strong>
+                </span>
+                
               </div>
+              
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validation"></div>
+                <input type="text" class="form-control" name="subject" placeholder="Subject" value="{{old('message')}}" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                
+                <span class="help-block">
+                    <strong></strong>
+                </span>
+                
               </div>
+              
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validation"></div>
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message">{{old('message')}}</textarea>
+                
+                <span class="help-block">
+                    <strong></strong>
+                </span>
+                
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
@@ -144,4 +162,30 @@
 @endsection
 @section('imports')
 @parent
+<script type="text/javascript">
+     jQuery(document).ready(function($){
+        
+        $('#message').on('submit',function(e){
+          e.preventDefault(e);
+          $.ajaxSetup({
+              headers: {
+                  'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+              }
+          });
+
+          var formURL = $(this).attr("action");
+          var postData = $(this).serializeArray();
+
+          $.ajax({
+              url: formURL,
+              type: 'POST',
+              data: postData,
+              dataType: 'JSON',
+              success: function (data) {
+                  console.log(data);
+              }
+          });
+       });
+    });
+</script>
 @endsection
