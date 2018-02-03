@@ -15,5 +15,7 @@ Route::get('/', function () {
     return redirect()->to('/home');
 });
 
+Route::get('/web/development', 'HomeController@getWebDevelopment');
+
 Route::get('/home', 'HomeController@getHome');
 Route::post('/send/message', 'HomeController@postMessage');

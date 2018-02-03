@@ -476,6 +476,48 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 20px;
 }
 
+/* Web Development Section */
+.web-title{
+  font-size: 32px;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+}
+.web-description{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.web-title-divider{
+  width: 400px;
+  height: 2px;
+  background: #03C4EB;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+}
+#webdevelopment {
+  background: #fff;
+  padding: 80px 0;
+}
+
+#webdevelopment .web-content {
+  background: #fff;
+}
+
+#webdevelopment .web-title {
+  color: #333;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+#webdevelopment .web-text {
+  line-height: 26px;
+}
+
+#webdevelopment .web-text:last-child {
+  margin-bottom: 0;
+}
 /* Get Started Section
 --------------------------------*/
 #about {
@@ -562,7 +604,6 @@ body.mobile-nav-active #mobile-nav-toggle {
       font-weight: 600;
       margin-bottom: 30px;
       margin-top: 15px;
-
 }
 
 /* Subscribe Section
@@ -832,6 +873,15 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .form button[type="submit"]:hover {
   background: #25d8fc;
+}
+
+#contact .contact-quote{
+      font-style: italic;
+      font-size: 16px;
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 15px;
+      margin-top: 0px;
 }
 
 /*--------------------------------------------------------------

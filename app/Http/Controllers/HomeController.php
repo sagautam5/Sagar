@@ -16,6 +16,10 @@ class HomeController extends Controller
     	return view('pages.home');
     }
 
+    public function getWebDevelopment(){
+        return view('pages.web_development');
+    }
+
     public function emailMessage($message){
 
     	$data = [
@@ -27,7 +31,7 @@ class HomeController extends Controller
         try {
             Mail::send('email.message_email',$data, function ($m) use ($message) {
                 
-                $m->from($message->email, "sagargautam.com.np");
+                $m->from($message->email, \URL::to(''));
                 $m->to("sagautam5@gmail.com", "Sagar Gautam")->subject($message->name.' sent you message');   
             });
         } catch (Exception $e) {

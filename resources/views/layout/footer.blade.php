@@ -1,6 +1,9 @@
 <footer class="site-footer">
    <div class="container">
 	    <div class="row">
+	    	<p id="join-us">Join Us</p>
+	    </div>
+	    <div class="row">
 	    	<div class="col-md-12 col-sm-12">
 	    		<ul class="social">
 	    			<div class="col-md-12">

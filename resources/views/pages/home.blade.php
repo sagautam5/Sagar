@@ -5,6 +5,10 @@
 
 @endsection
 
+@section('top_header')
+   @include('layout.top_header')
+@endsection
+
 @section('header')
 	@include('layout.header')
 @endsection
@@ -64,12 +68,12 @@
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-paper-plane"></i></div>
           <h4 class="service-title"><a href="">Java Programming</a></h4>
-          <p class="service-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          <p class="service-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla dolore eu fugiat nulla fugiat nulla pariatur . . . . <a href="{{URL::to('java/programming')}}">read more >> </a></p>
         </div>
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-bar-chart"></i></div>
           <h4 class="service-title"><a href="">Dorwhjber Bosfndj</a></h4>
-          <p class="service-description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+          <p class="service-description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata  tarad limino ata . . . . <a href="{{URL::to('java/programming')}}">read more >></a></p>
         </div>
       </div>
     </div>
@@ -84,21 +88,23 @@
         <div class="col-md-12">
           <h3 class="section-title">Contact</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <p class="section-description">If you have any queries regarding us and our work, feel free to send your message.</p>
         </div>
       </div>
 
       <div class="row">
+        <p class="contact-quote">"I always like to know who I'm speaking with."</p>
         <div class="col-md-3 col-md-push-2">
           <div class="info">
             <div>
+              <br/>
               <i class="fa fa-map-marker"></i>
-              <p>Sankhamul<br/>Lalitpur, Nepal</p>
+              <p>Sankhamul<br/>Lalitpur, Nepal</p><br/>
             </div>
 
             <div>
               <i class="fa fa-envelope"></i>
-              <p>sagautam5@gmail.com</p><br/>
+              <p>sagautam5@gmail.com</p><br/><br/>
             </div>
 
             <div>
@@ -108,13 +114,12 @@
 
           </div>
         </div>
-
         <div class="col-md-5 col-md-push-2">
           <div class="form">
             <form action="{{URL::to('/send/message')}}" method="post" role="form" id="message">
-              
-              <div class="form-group">
-                <input type="text" name="name" class="form-control" placeholder="Your Name" value="{{old('email')}}" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <div class="form-group">  
+                <h5>Name *</h5>
+                <input type="text" name="name" class="form-control" placeholder="Please provide your name" value="{{old('email')}}" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                 
                     <span class="help-block">
                         <strong></strong>
@@ -123,7 +128,8 @@
               </div>
               
               <div class="form-group">
-                <input type="email" class="form-control" name="email" placeholder="Your Email" value="{{old('email')}}" data-rule="email" data-msg="Please enter a valid email" />
+                <h5>Email *</h5>
+                <input type="email" class="form-control" name="email" placeholder="Please provide your email" value="{{old('email')}}" data-rule="email" data-msg="Please enter a valid email" />
 
                 <span class="help-block">
                     <strong></strong>
@@ -132,7 +138,8 @@
               </div>
               
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" placeholder="Subject" value="{{old('message')}}" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <h5>Subject *</h5>
+                <input type="text" class="form-control" name="subject" placeholder="Please add subject" value="{{old('message')}}" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                 
                 <span class="help-block">
                     <strong></strong>
@@ -141,7 +148,8 @@
               </div>
               
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message">{{old('message')}}</textarea>
+                <h5>Your Message *</h5>
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Send something awesome to my inbox.">{{old('message')}}</textarea>
                 
                 <span class="help-block">
                     <strong></strong>
@@ -152,8 +160,7 @@
             </form>
           </div>
         </div>
-
-      </div>
+    </div>
     </div>
   </section>
 @endsection

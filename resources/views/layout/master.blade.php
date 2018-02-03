@@ -38,6 +38,10 @@
 </head>
 <body>
 <!-- <div id="preloader"></div> -->
+
+@section('top_header')
+@show
+
 @section('header')
 @show()
 @yield('content')
