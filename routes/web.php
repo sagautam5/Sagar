@@ -18,4 +18,8 @@ Route::get('/', function () {
 Route::get('/web/development', 'HomeController@getWebDevelopment');
 
 Route::get('/home', 'HomeController@getHome');
+Route::get('/about', 'HomeController@getAbout');
+Route::get('/services', 'HomeController@getServices');
+Route::get('/contact', 'HomeController@getContact');
+
 Route::post('/send/message', 'HomeController@postMessage');

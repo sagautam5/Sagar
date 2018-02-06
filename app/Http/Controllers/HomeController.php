@@ -16,6 +16,18 @@ class HomeController extends Controller
     	return view('pages.home');
     }
 
+    public function getAbout(){
+        return view('pages.about');
+    }
+
+    public function getServices(){
+        return view('pages.services');
+    }
+
+    public function getContact(){
+        return view('pages.contact');
+    }
+
     public function getWebDevelopment(){
         return view('pages.web_development');
     }

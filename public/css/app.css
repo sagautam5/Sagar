@@ -58,7 +58,7 @@ body{
 	text-align: center;
 	color: white;
 	font-weight: bold;
-	border-bottom: 1px solid gray;
+	border-bottom: 1px solid #333333;
 }
 
 .social li{

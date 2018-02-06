@@ -541,6 +541,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about .about-text {
   line-height: 26px;
+  font-size: 16px;
+  text-align: justify;
 }
 
 #about .about-text:last-child {
@@ -830,8 +832,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 80px 0;
 }
 
+#contact .info-box{
+  border-top: 1px solid #03C4EB;
+  margin-top: 30px;
+}
+#contact .contact-item{
+  margin-right: 40px;
+}
+
 #contact .info {
   color: #333333;
+  margin-top: 25px;
 }
 
 #contact .info i {
@@ -877,11 +888,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .contact-quote{
       font-style: italic;
-      font-size: 16px;
+      font-size: 18px;
       text-align: center;
-      font-weight: 600;
-      margin-bottom: 15px;
-      margin-top: 0px;
+      font-weight: 700;
+      margin-top: 40px;
+      margin-bottom: 30px;
 }
 
 /*--------------------------------------------------------------
