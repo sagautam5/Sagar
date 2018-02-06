@@ -303,7 +303,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 15px;
   text-decoration: none;
   display: inline-block;
-  color: #fff;
+  color: gray;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-size: 14px;
@@ -311,7 +311,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu a:hover, .nav-menu li:hover > a, .nav-menu .menu-active > a {
-  color: #03C4EB;
+  color: #fff;
+  border-bottom: 1px #03C4EB solid;
+  text-decoration: none;
 }
 
 .nav-menu ul {
@@ -456,7 +458,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Sections Common
 --------------------------------*/
 .section-title {
-  font-size: 32px;
+  font-size: 26px;
   color: #111;
   text-transform: uppercase;
   text-align: center;
@@ -522,7 +524,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 #about {
   background: #fff;
-  padding: 80px 0;
+  padding: 25px 0;
 }
 
 /*#about .about-container {
@@ -547,6 +549,19 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about .about-text:last-child {
   margin-bottom: 0;
+}
+
+#about .sub-title{
+  text-align: left;
+  font-size: 26px;
+  color: #444;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+#about .about-container{
+  margin-top: 10px;
+  margin-bottom: 80px;
 }
 
 /* Services Section
@@ -829,7 +844,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 #contact {
   background: #f7f7f7;
-  padding: 80px 0;
+  padding: 50px 0;
 }
 
 #contact .info-box{

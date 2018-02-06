@@ -1,5 +1,5 @@
 @extends('layout.master')
-@section('title', 'Sagar Gautam')
+@section('title', 'Sagar Gautam - A Software Engineer')
 @section('assets')
 @parent
 
@@ -34,7 +34,7 @@
             degrees in Computer Engineering from Institute of Engineering (IOE) Pulchowk Campus in 2016.
             I’ve previously worked as a PHP Developer at Business Veins Pvt. Ltd. for nearly one year.
 
-            <p class="about-text">I design and build static websites, functional websites and web applications. I also like to 
+          <p class="about-text">I design and build static websites, functional websites and web applications. I also like to 
             work on Java Console Programming and making simple UI in Java...<a href="{{URL::to('/about')}}"> read more </a>
           </p>
           <p class="about-text"></p>
@@ -94,11 +94,10 @@
               <p>sagautam5@gmail.com</p>
             </div>
 
-            <div class="col-md-3 ">
+            <div class="col-md-3 contact-item">
               <i class="fa fa-phone"></i>
               <p>+ 977 9840254602</p>
             </div>
-
           </div>
         </div>
       </div>

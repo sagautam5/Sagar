@@ -28,6 +28,14 @@ class HomeController extends Controller
         return view('pages.contact');
     }
 
+    public function getProjects(){
+        return view('pages.projects');
+    }
+
+    public function getResume(){
+        return view('pages.resume');
+    }
+
     public function getWebDevelopment(){
         return view('pages.web_development');
     }

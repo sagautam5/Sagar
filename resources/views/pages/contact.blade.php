@@ -1,5 +1,5 @@
 @extends('layout.master')
-@section('title', 'Sagar Gautam')
+@section('title', 'Contact - Sagar Gautam - A Software eveloper')
 @section('assets')
 @parent
 
