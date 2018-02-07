@@ -44,9 +44,14 @@
     <div class="container about-container wow fadeInUp">
       <div class="row">
         <div class="col-md-12 about-content">
+            <h4 style="text-decoration:underline;"><b>PHP Developer</b></h4>
             <p class="about-text">
-              
-            </p>
+              Business Veins<br/>
+              Nov-2016 to Sep-2017<br/>
+              Patandhoka, Lalitpur<br/>
+            </p><br/>
+            <p class="about-text">I've previously worked as a PHP developer in this company where I've managed and maintained PHP backend for the dynamic datadriven applications at initial stage as well as development phase.</p>
+            <p class="about-text">Web Technologies Used:<b> PHP, MySQL, Laravel, AJAX, jQuery, HTML, CSS, Bootstrap</b></p>
         </div>
       </div>
     </div>
@@ -89,8 +94,11 @@
       <div class="row">
         <div class="col-md-12 about-content">
             <p class="about-text">
-            
+            I've started to solve problem in Project Euler recently. I've just solved 11 problems using Java Programming language.
             </p>
+            <p class="about-text">
+              You can visit my github repository of project eular problems <a href="https://github.com/sagautam5/eular" target="_blank">here<a>
+            <p>
         </div>
       </div>
     </div>

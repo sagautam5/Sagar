@@ -35,7 +35,7 @@
             I’ve previously worked as a PHP Developer at Business Veins Pvt. Ltd. for nearly one year.
 
           <p class="about-text">I design and build static websites, functional websites and web applications. I also like to 
-            work on Java Console Programming and making simple UI in Java...<a href="{{URL::to('/about')}}"> read more </a>
+            work on Java Console Programming and making simple UI in Java...<a href="{{URL::to('/about')}}" target="_blank"> read more </a>
           </p>
           <p class="about-text"></p>
         </div>

@@ -555,8 +555,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: left;
   font-size: 26px;
   color: #444;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 10px;
+  border-bottom: 1px solid #03C4EB;
 }
 
 #about .about-container{
