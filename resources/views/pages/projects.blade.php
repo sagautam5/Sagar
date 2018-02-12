@@ -47,17 +47,16 @@
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="sub-title">Minor Project: CTweets Android Application</h3>
-          <p class="project-text"></p>
-          <p class="project-text"></p>
-          <p class="project-text"></p>
+          <h3 class="sub-title"> Minor Project: CTweets Android Application</h3>
+          <p class="project-text"> In this project, we made a system to classify the twitter data using Naive Bayes Classifier. This is our Minor Project as a part of the course. Natural Language Processing and Probabilistic Modeling is performed to identify the features in twitter data and then Naive Bayes Classifier is implemented to classify the twitter data. </p>
+          <p class="project-text"> Twitter data is extracted using web services and then language processing methods are applied and finally classified. These classified results are accessible to associated user throgh android application.</p>
         </div>
       </div>
       <div class="row">
 	        <div class="col-md-12">
 	        	<div class="more-details">	
-		          	<p class="project-text"><b>Technologies</b>: Java, PHP, MySQL, Android, HTML, CSS, Bootstrap</p>
-		          	<p class="project-text"><b>Git Hub : </b><a href="https://github.com/sagautam5/MinorProject" target="_blank">View Source</a></p>
+		          	<p class="project-text"><b> Technologies</b>: Java, PHP, MySQL, Android, HTML, CSS, Bootstrap</p>
+		          	<p class="project-text"><b> Git Hub : </b><a href="https://github.com/sagautam5/MinorProject" target="_blank">View Source</a></p>
 	     		</div>
 	     	</div>
       </div>
@@ -66,7 +65,7 @@
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="project-section-title">Personal Projects</h3>
+          <h3 class="project-section-title"> Personal Projects</h3>
           <div class="project-title-divider"></div>
         </div>
       </div>
@@ -74,8 +73,19 @@
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="sub-title">Spelling Corrector</h3>
+          <h3 class="sub-title"> Spelling Corrector</h3>
+          <p class="project-text"> </p>
+          <p class="project-text"> </p>
+          <p class="project-text"> </p>
         </div>
+      </div>
+      <div class="row">
+	        <div class="col-md-12">
+	        	<div class="more-details">	
+		          	<p class="project-text"><b> Technologies</b>: Java</p>
+		          	<p class="project-text"><b> Git Hub : </b><a href="https://github.com/sagautam5/spellingcorrector" target="_blank">View Source</a></p>
+	     		</div>
+	     	</div>
       </div>
     </div>
     <div class="container project-container wow fadeInUp">
@@ -89,7 +99,7 @@
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="sub-title">Guessing Number</h3>
+          <h3 class="sub-title"> Guessing Number</h3>
         </div>
       </div>
     </div>
