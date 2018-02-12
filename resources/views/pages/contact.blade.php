@@ -21,7 +21,6 @@
           <p class="section-description">If you have any queries regarding us and our work, feel free to send your message.</p>
         </div>
       </div>
-
       <div class="row">
         <div class="col-md-12">
           <div class="col-md-8 col-md-push-2">

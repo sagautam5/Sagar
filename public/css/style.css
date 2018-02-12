@@ -841,6 +841,67 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0 2px;
 }
 
+/* Project Section
+----------------------------*/
+#project {
+  background: #f7f7f7;
+  padding: 50px 0;
+}
+
+
+/*#project .project-container {
+  background: url(../img/about-img.jpg) left top no-repeat;
+}*/
+
+#project .project-content {
+  background: #fff;
+}
+
+#project .project-title {
+  color: #333;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+#project .project-text {
+  line-height: 26px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+#project .project-text:last-child {
+  margin-bottom: 0;
+}
+
+#project .sub-title{
+  text-align: left;
+  font-size: 26px;
+  color: #444;
+  font-weight: 500;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #03C4EB;
+}
+
+#project .project-container{
+  margin-top: 10px;
+  margin-bottom: 80px;
+}
+
+.project-section-title {
+  font-size: 26px;
+  color: #444;
+  text-align: left;
+  font-weight: 500;
+}
+#project .project-title-divider{
+  width: 200px;
+  height: 2px;
+  background: #03C4EB;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+
 /* Contact Section
 --------------------------------*/
 #contact {
