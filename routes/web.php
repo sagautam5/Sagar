@@ -22,6 +22,6 @@ Route::get('/about', 'HomeController@getAbout');
 Route::get('/services', 'HomeController@getServices');
 Route::get('/contact', 'HomeController@getContact');
 Route::get('/projects', 'HomeController@getProjects');
-Route::get('/resume', 'HomeController@getResume');
+Route::get('/blog', 'HomeController@getBlog');
 
 Route::post('/send/message', 'HomeController@postMessage');

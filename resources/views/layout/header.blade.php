@@ -15,9 +15,9 @@
         <ul class="nav-menu">
           <li @if(url()->current()==URL::to('/home')) class="menu-active" @endif><a href="{{URL::to('/home')}}">Home</a></li>
           <li @if(url()->current()==URL::to('/about')) class="menu-active" @endif><a href="{{URL::to('/about')}}">About</a></li>
-          <li @if(url()->current()==URL::to('/resume')) class="menu-active" @endif><a href="{{URL::to('/resume')}}">Resume</a></li>
           <li @if(url()->current()==URL::to('/projects')) class="menu-active" @endif><a href="{{URL::to('/projects')}}">Projects</a></li>
           <li @if(url()->current()==URL::to('/services')) class="menu-active" @endif><a href="{{URL::to('/services')}}">Services</a></li>
+          <li @if(url()->current()==URL::to('/blog')) class="menu-active" @endif><a href="{{URL::to('/blog')}}">Blog</a></li>
           <li @if(url()->current()==URL::to('/contact')) class="menu-active" @endif><a href="{{URL::to('/contact')}}">Contact</a></li>
         </ul>
       </nav>

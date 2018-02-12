@@ -32,8 +32,8 @@ class HomeController extends Controller
         return view('pages.projects');
     }
 
-    public function getResume(){
-        return view('pages.resume');
+    public function getBlog(){
+        return view('pages.blog');
     }
 
     public function getWebDevelopment(){
