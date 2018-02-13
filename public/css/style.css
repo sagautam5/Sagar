@@ -911,6 +911,24 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-top: 30px;
 }
 
+/* Spelling Corrector ----------------
+--------------------------------------*/
+
+.corrector .algorithm{
+  font-weight: 600;
+}
+.corrector .item{
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.corrector .item .sub-item{
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.corrector .item .sub-item .sub-sub-item{
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
 
 /* Contact Section
 --------------------------------*/

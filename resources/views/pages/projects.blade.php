@@ -74,9 +74,32 @@
       <div class="row">
         <div class="col-md-12">
           <h3 class="sub-title"> Spelling Corrector</h3>
-          <p class="project-text"> </p>
-          <p class="project-text"> </p>
-          <p class="project-text"> </p>
+          <p class="project-text"> This is a simple spelling corrector based on probability. It takes a string as input and then provides spelling corrected word as output using bag of words. If the test word is already correct, then it returns same word.</p>
+          <p class="project-text"> A bag of words is created from a text file containing large number of paragraphs and then frequency of each word is calculated. When input string is provided then the word is checked if it's already correct. If so same word is returned otherwise, a list of closer words are created and most probable word from the list is assigned as correct word and then returned as result.</p>
+          <p class="project-text"> Here is the algorithm,</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 corrector">
+          <h4 class="algorithm">Spelling correction with Naive Bayes approach</h4>
+          <ul type="1">
+            <li class="item">Get a word from users input</li>
+            <li class="item">Search word in the collection or Bag of words</li>
+            <li class="item">If word is found, just return the same word otherwise
+              <ul type="A">
+                <li class="sub-item">Generate a list of close and probable words by
+                  <ul type="i">
+                    <li class="sub-sub-item">single letter deletion</li>
+                    <li class="sub-sub-item">single letter insertion</li>
+                    <li class="sub-sub-item">single letter replacement</li>
+                    <li class="sub-sub-item">swap of two letters </li>
+                  </ul>
+                </li>
+                <li class="sub-item">Get frequency of each probable word from the bag of words</li>
+                <li class="sub-item">Return most frequent probable word as spell correct word</li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
       <div class="row">
