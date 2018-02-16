@@ -94,7 +94,7 @@
       <div class="row">
         <div class="col-md-12 about-content">
             <p class="about-text">
-            I've started to solve problem in Project Euler recently. I've just solved 11 problems using Java Programming language.
+            I've started to solve problems in Project Euler recently. I've just solved 11 problems using Java Programming language.
             </p>
             <p class="about-text">
               You can visit my github repository of project eular problems <a href="https://github.com/sagautam5/eular" target="_blank">here<a>
