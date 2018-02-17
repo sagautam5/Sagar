@@ -18,51 +18,77 @@
         <div class="col-md-12">
           <h3 class="section-title">Contact</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">If you have any queries regarding us and our work, feel free to send your message.</p>
+          <p class="contact-message">If you have any queries regarding us and our work, feel free to send your message.</p>
         </div>
       </div>
+      @foreach (['danger', 'warning', 'success', 'info'] as $msg)
+        @if(Session::has('alert-' . $msg))
+          <p class="alert alert-{{ $msg }}" style="text-align:center;">{{ Session::get('alert-' . $msg) }} <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a></p>
+        @endif
+      @endforeach
       <div class="row">
         <div class="col-md-12">
           <div class="col-md-8 col-md-push-2">
             <div class="form">
-              <form action="{{URL::to('/send/message')}}" method="post" role="form" id="message">
-                <div class="form-group">  
-                  <h5>Name *</h5>
-                  <input type="text" name="name" class="form-control" placeholder="Please provide your name" value="{{old('email')}}" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  
-                      <span class="help-block">
-                          <strong></strong>
-                      </span>
-                  
+              <form action="{{URL::to('/send/message')}}" method="post" role="form" id="message" onsubmit="return confirm('Are you sure you want to send message ?');">
+                {{ csrf_field() }}
+                <div class="row">
+                  <div class="form-group">  
+                    <div class="col-md-6">
+                        <h4>First Name *</h4>
+                        <input type="text" name="fname" class="form-control" value="{{old('fname')}}" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                        
+                            @if($errors->has('fname'))
+                              <div class="error">
+                                {{$errors->first('fname')}}
+                              </div> 
+                            @endif
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Last Name *</h4>
+                        <input type="text" name="lname" class="form-control" value="{{old('lname')}}" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                        
+                            @if($errors->has('lname'))
+                              <div class="error">
+                                  {{$errors->first('lname')}}
+                              </div> 
+                            @endif
+                    </div>
+                  </div>
                 </div>
                 
                 <div class="form-group">
-                  <h5>Email *</h5>
-                  <input type="email" class="form-control" name="email" placeholder="Please provide your email" value="{{old('email')}}" data-rule="email" data-msg="Please enter a valid email" />
+                  <h4>Email *</h4>
+                  <input class="form-control" name="email" value="{{old('email')}}" />
 
-                  <span class="help-block">
-                      <strong></strong>
-                  </span>
-                  
+                  @if($errors->has('email'))
+                    <div class="error">
+                      {{$errors->first('email')}}
+                    </div>
+                  @endif
                 </div>
                 
                 <div class="form-group">
-                  <h5>Subject *</h5>
-                  <input type="text" class="form-control" name="subject" placeholder="Please add subject" value="{{old('message')}}" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <h4>Subject *</h4>
+                  <input type="text" class="form-control" name="subject" value="{{old('subject')}}" />
                   
-                  <span class="help-block">
-                      <strong></strong>
-                  </span>
-                  
+                  @if($errors->has('subject'))
+                    <div class="error">
+                      {{$errors->first('subject')}}
+                    </div>
+                  @endif
+      
                 </div>
                 
                 <div class="form-group">
-                  <h5>Your Message *</h5>
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Send something awesome to my inbox.">{{old('message')}}</textarea>
+                  <h4>Your Message *</h4>
+                  <textarea class="form-control" name="message" rows="5" >{{old('message')}}</textarea>
                   
-                  <span class="help-block">
-                      <strong></strong>
-                  </span>
+                  @if($errors->has('message'))
+                    <div class="error">
+                      {{$errors->first('message')}}
+                    </div>
+                  @endif
                   
                 </div>
                 <div class="text-center"><button type="submit"><span><i class="fa fa-paper-plane"></i></span></button></div>
@@ -73,7 +99,7 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <p class="contact-quote">"I always like to know who I'm speaking with."</p>
+          <p class="contact-quote">"Your messages are always great for us"</p>
         </div>
       </div>
       <div class="row info-box">
@@ -106,8 +132,9 @@
 @section('imports')
 @parent
 <script type="text/javascript">
+
      jQuery(document).ready(function($){
-        
+     /*   
         $('#message').on('submit',function(e){
           e.preventDefault(e);
           $.ajaxSetup({
@@ -128,7 +155,7 @@
                   console.log(data);
               }
           });
-       });
+       });*/
     });
 </script>
 @endsection
