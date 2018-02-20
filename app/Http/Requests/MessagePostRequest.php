@@ -30,6 +30,7 @@ class MessagePostRequest extends FormRequest
             'email' => 'required|email|unique:users,email',
             'subject' => 'required',
             'message' => 'required',
+            'g-recaptcha-response' => 'required|recaptcha',
         ];
     }
 
@@ -42,7 +43,9 @@ class MessagePostRequest extends FormRequest
             'email.unique' => 'email already exists',
             'email.email' => 'please add valid email address',
             'subject.required' => 'please add subject',
-            'message.required' => 'please say something for us'
+            'message.required' => 'please say something for us',
+            'g-recaptcha-response.required' => 'Please ensure that you are a human!',
+            'g-recaptcha-response.recaptcha' => 'Please ensure that you are a human!',
         ];
     }
 }

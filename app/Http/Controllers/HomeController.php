@@ -61,14 +61,15 @@ class HomeController extends Controller
         }
     }
 
+
     public function postMessage(MessagePostRequest $request){
 
         $success = true;
-
+        
         \DB::beginTransaction();
         
         try{
-            $message = Message::create($request->except('_token'));
+            $message = Message::create($request->only('fname','lname','email','subject','message'));
             $sent = $this->emailMessage($message);
             \DB::commit();
         }catch(Exception $e){

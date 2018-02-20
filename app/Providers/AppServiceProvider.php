@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use Validator;
+
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -14,6 +16,22 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        Validator::extend('recaptcha', function($attribute, $value, $parameters) {
+            
+            $client = new \GuzzleHttp\Client();
+            $response = $client->post(
+            'https://www.google.com/recaptcha/api/siteverify',
+            ['form_params'=>
+                [
+                    'secret'=>env('NOCAPTCHA_SECRET'),
+                    'response'=>$value,
+                 ]
+            ]
+            );
+
+            $body = json_decode((string)$response->getBody());
+            return $body->success;
+        });
     }
 
     /**

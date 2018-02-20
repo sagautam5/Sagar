@@ -57,40 +57,64 @@
                   </div>
                 </div>
                 
-                <div class="form-group">
-                  <h4>Email *</h4>
-                  <input class="form-control" name="email" value="{{old('email')}}" />
+                <div class="row">
+                  <div class="form-group">
+                    <div class="col-md-12">
+                      <h4>Email *</h4>
+                      <input class="form-control" name="email" value="{{old('email')}}" />
 
-                  @if($errors->has('email'))
-                    <div class="error">
-                      {{$errors->first('email')}}
+                      @if($errors->has('email'))
+                        <div class="error">
+                          {{$errors->first('email')}}
+                        </div>
+                      @endif
                     </div>
-                  @endif
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group">
+                    <div class="col-md-12">
+                      <h4>Subject *</h4>
+                      <input type="text" class="form-control" name="subject" value="{{old('subject')}}" />
+                      
+                      @if($errors->has('subject'))
+                        <div class="error">
+                          {{$errors->first('subject')}}
+                        </div>
+                      @endif
+                    </div>
+                  </div>
                 </div>
                 
-                <div class="form-group">
-                  <h4>Subject *</h4>
-                  <input type="text" class="form-control" name="subject" value="{{old('subject')}}" />
-                  
-                  @if($errors->has('subject'))
-                    <div class="error">
-                      {{$errors->first('subject')}}
+                <div class="row">
+                  <div class="form-group">
+                    <div class="col-md-12">
+                      <h4>Your Message *</h4>
+                      <textarea class="form-control" name="message" rows="5" >{{old('message')}}</textarea>
+                      
+                      @if($errors->has('message'))
+                        <div class="error">
+                          {{$errors->first('message')}}
+                        </div>
+                      @endif
                     </div>
-                  @endif
-      
+                  </div>
                 </div>
                 
-                <div class="form-group">
-                  <h4>Your Message *</h4>
-                  <textarea class="form-control" name="message" rows="5" >{{old('message')}}</textarea>
-                  
-                  @if($errors->has('message'))
-                    <div class="error">
-                      {{$errors->first('message')}}
+                <div class="row">
+                  <div class="form-group"> 
+                    <div class="col-md-12 captcha">
+                        {!! app('captcha')->display(); !!}
+                        @if($errors->has('g-recaptcha-response'))
+                            <div class="error">
+                              {{$errors->first('g-recaptcha-response')}}
+                            </div>
+                        @endif
                     </div>
-                  @endif
-                  
+                  </div>
                 </div>
+
                 <div class="text-center"><button type="submit"><span><i class="fa fa-paper-plane"></i></span></button></div>
               </form>
             </div>
