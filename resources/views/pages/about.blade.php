@@ -29,6 +29,7 @@
               I design and build static websites, functional websites and web applications. I also like to 
            		work on Java Console Programming and making basic UI in Java.
           	</p>
+            <p class="about-text">Few Facts: A Manchester City Supporter, Tea Lover</p>
         </div>
       </div>
     </div>

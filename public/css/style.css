@@ -87,7 +87,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100vh;
   background: url(../images/hero-bg.jpg) top center fixed;
-  background-size: cover;
 }
 
 #hero .hero-logo {
@@ -523,18 +522,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Get Started Section
 --------------------------------*/
 #about {
-  background: #fff;
+  /*background: #f4f4f4;*/
+  background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("../images/collection/coffee.jpg") fixed center center;
   padding: 25px 0;
 }
 
 /*#about .about-container {
   background: url(../img/about-img.jpg) left top no-repeat;
 }*/
-
-#about .about-content {
-  background: #fff;
-}
-
 #about .about-title {
   color: #333;
   font-weight: 700;
@@ -545,6 +540,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   line-height: 26px;
   font-size: 16px;
   text-align: justify;
+  color: #000;
 }
 
 #about .about-text:last-child {
@@ -557,7 +553,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #444;
   font-weight: 500;
   margin-bottom: 10px;
-  padding-bottom: 5px;
+  /*padding-bottom: 5px;*/
   border-bottom: 1px solid #03C4EB;
 }
 
@@ -624,6 +620,15 @@ body.mobile-nav-active #mobile-nav-toggle {
       margin-bottom: 30px;
       margin-top: 15px;
 }
+
+/* Blog Section -------------------------
+-----------------------------------------*/
+#blog {
+  
+  background-size: cover;
+  padding: 80px 0;
+}
+
 
 /* Subscribe Section
 --------------------------------*/
@@ -845,8 +850,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Project Section
 ----------------------------*/
 #project {
-  background: #f7f7f7;
   padding: 50px 0;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/collection/programme.jpeg") fixed center center;
+  background-size: cover;
 }
 
 
@@ -854,12 +860,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: url(../img/about-img.jpg) left top no-repeat;
 }*/
 
-#project .project-content {
-  background: #f7f7f7;
-}
-
 #project .project-title {
-  color: #333;
+  color: #000;
   font-weight: 700;
   font-size: 28px;
 }
@@ -868,6 +870,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   line-height: 26px;
   font-size: 16px;
   text-align: justify;
+  color: #000;
 }
 
 #project .project-text:last-child {
@@ -920,20 +923,23 @@ body.mobile-nav-active #mobile-nav-toggle {
 .corrector .item{
   margin-top: 10px;
   margin-bottom: 5px;
+  color: #000;
 }
 .corrector .item .sub-item{
   margin-top: 10px;
   margin-bottom: 5px;
+  color: #000;
 }
 .corrector .item .sub-item .sub-sub-item{
   margin-top: 10px;
   margin-bottom: 5px;
+  color: #000;
 }
 
 /* Contact Section
 --------------------------------*/
 #contact {
-  background: #f7f7f7;
+  background: #f4f4f4;
   padding: 50px 0;
 }
 
@@ -1028,6 +1034,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 10px;
 }
 
+/*---------------------------------------------------------
+# Blog Section
+-----------------------------------------------------------*/
+#blog{
+  padding: 80px;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/collection/coffee.jpg") fixed center center;
+  background-size: cover;
+}
 
 /*--------------------------------------------------------------
 # Footer
