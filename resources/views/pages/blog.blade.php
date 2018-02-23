@@ -20,7 +20,7 @@
       <div class="row">
         <div class="col-md-12">
           <h1 style="text-align: center"> This section is under maintainance</h1>
-        </div>
+        </div>o
       </div>
   </div>
 </section>

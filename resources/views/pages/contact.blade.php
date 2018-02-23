@@ -33,7 +33,14 @@
               <form action="{{URL::to('/send/message')}}" method="post" role="form" id="message" onsubmit="return confirm('Are you sure you want to send message ?');">
                 {{ csrf_field() }}
                 <div class="row">
-                  <div class="form-group">  
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="col-md-6">
+                          <p><b>Note:</b> All fields are required.</p>
+                        </div>
+                      </div>
+                    </div>
                     <div class="col-md-6">
                         <h4>First Name *</h4>
                         <input type="text" name="fname" class="form-control" value="{{old('fname')}}" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -121,11 +128,11 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-md-12">
           <p class="contact-quote">"Your messages are always great for us"</p>
         </div>
-      </div>
+      </div> -->
       <div class="row info-box">
         <div class="col-md-9 col-md-push-2">
           <div class="info">
