@@ -37,12 +37,12 @@
                     <div class="row">
                       <div class="col-md-12">
                         <div class="col-md-6">
-                          <p><b>Note:</b> All fields are required.</p>
+                          <p class="form-label"><b>Note:</b> All fields are required.</p>
                         </div>
                       </div>
                     </div>
                     <div class="col-md-6">
-                        <h4>First Name *</h4>
+                        <h4 class="form-label">First Name *</h4>
                         <input type="text" name="fname" class="form-control" value="{{old('fname')}}" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                         
                             @if($errors->has('fname'))
@@ -52,7 +52,7 @@
                             @endif
                     </div>
                     <div class="col-md-6">
-                        <h4>Last Name *</h4>
+                        <h4 class="form-label">Last Name *</h4>
                         <input type="text" name="lname" class="form-control" value="{{old('lname')}}" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                         
                             @if($errors->has('lname'))
@@ -67,7 +67,7 @@
                 <div class="row">
                   <div class="form-group">
                     <div class="col-md-12">
-                      <h4>Email *</h4>
+                      <h4 class="form-label">Email *</h4>
                       <input class="form-control" name="email" value="{{old('email')}}" />
 
                       @if($errors->has('email'))
@@ -82,7 +82,7 @@
                 <div class="row">
                   <div class="form-group">
                     <div class="col-md-12">
-                      <h4>Subject *</h4>
+                      <h4 class="form-label">Subject *</h4>
                       <input type="text" class="form-control" name="subject" value="{{old('subject')}}" />
                       
                       @if($errors->has('subject'))
@@ -97,7 +97,7 @@
                 <div class="row">
                   <div class="form-group">
                     <div class="col-md-12">
-                      <h4>Your Message *</h4>
+                      <h4 class="form-label">Your Message *</h4>
                       <textarea class="form-control" name="message" rows="5" >{{old('message')}}</textarea>
                       
                       @if($errors->has('message'))

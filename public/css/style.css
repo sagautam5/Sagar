@@ -939,8 +939,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Contact Section
 --------------------------------*/
 #contact {
-  background: #f4f4f4;
-  padding: 50px 0;
+  background: linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0)), url("../images/collection/polygon.png") fixed center center;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+#contact .form .form-label{
+  color: #000;
 }
 
 #contact .info-box{
@@ -1009,6 +1014,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-style: italic;
   text-align: center;
   margin-bottom: 20px;
+  color: #000;
 }
 
 #contact .error{
@@ -1039,7 +1045,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 -----------------------------------------------------------*/
 #blog{
   padding: 80px;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../images/collection/coffee.jpg") fixed center center;
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../images/collection/about.jpg") fixed center center;
   background-size: cover;
 }
 
