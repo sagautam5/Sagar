@@ -27,9 +27,9 @@
               Hi, I'm Sagar Gautam, a software developer from Lalitpur, Nepal, have completed Bachelor’s 
               degrees in Computer Engineering from Institute of Engineering (IOE) Pulchowk Campus in 2016.
               I design and build static websites, functional websites and web applications. I also like to 
-           		work on Java Console Programming and making basic UI in Java.
+           		work on Java Programming.
           	</p>
-            <p class="about-text">Few Facts: A Manchester City Supporter, Tea Lover</p>
+            <p class="about-text">Few Facts: A Manchester City Supporter, Football Lover</p>
         </div>
       </div>
     </div>
@@ -51,7 +51,7 @@
               Nov-2016 to Sep-2017<br/>
               Patandhoka, Lalitpur<br/>
             </p><br/>
-            <p class="about-text">I've previously worked as a PHP developer in this company where I've managed and maintained PHP backend for the dynamic datadriven applications at initial stage as well as development phase.</p>
+            <p class="about-text">I've previously worked as a PHP developer in this company where I've managed and maintained PHP backend for the dynamic datadriven web applications</p>
             <p class="about-text">Web Technologies Used:<b> PHP, MySQL, Laravel, AJAX, jQuery, HTML, CSS, Bootstrap</b></p>
         </div>
       </div>

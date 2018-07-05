@@ -18,7 +18,7 @@
         <div class="col-md-12">
           <h3 class="section-title"> Services</h3>
           <div class="section-title-divider"></div>
-          <p class="service-quote">"We organize our software development process to meet your project requirements with in your time limit"</p>
+          <!-- <p class="service-quote">"We organize our software development process to meet your project requirements with in your time limit"</p> -->
         </div>
       </div>
 

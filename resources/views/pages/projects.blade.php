@@ -110,6 +110,14 @@
             <p class="project-text">This is a four digit number guessing game in which all we have to do is to guess secret code with in 8 attempts. The secret code consist of four unique digits from 1 to 9. User gives four digit number as the guess and then programme gives no of digits in right and wrong position with respect to the secret code. If user can't guess secret code correctly with in 8 attempts secret code will be displayed after last attempt.</p>
         </div>
       </div>
+      <div class="row">
+          <div class="col-md-12">
+            <div class="more-details">  
+                <p class="project-text"><b> Technologies</b>: Java</p>
+                <p class="project-text"><b> Git Hub : </b><a href="https://github.com/sagautam5/spellingcorrector" target="_blank">View Source</a></p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 @endsection
