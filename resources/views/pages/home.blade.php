@@ -59,18 +59,17 @@
       <div class="row">
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-desktop"></i></div>
-          <h4 class="service-title"><a href="{{URL::to('web/development')}}">Web Design</a></h4>
-          <p class="service-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla dolore eu fugiat nulla fugiat nulla pariatur  . . . . <a href="{{URL::to('web/development')}}">read more >> </a></p>
+          <h4 class="service-title"><a href="{{URL::to('web/development')}}">Web App Development</a></h4>
         </div>
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-paper-plane"></i></div>
-          <h4 class="service-title"><a href="">Web App Development</a></h4>
-          <p class="service-description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla dolore eu fugiat nulla fugiat nulla pariatur . . . . <a href="{{URL::to('java/programming')}}">read more >> </a></p>
+          <h4 class="service-title"><a href="">Software Development</a></h4>
+          <p class="service-description">We can help you expand digitally in different kinds of ways. What are you looking for? We create brand identity systems, digital platforms and campaigns that engage today's consumers.<a href="">read more >> </a></p>
         </div>
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-bar-chart"></i></div>
-          <h4 class="service-title"><a href="">Dkjnerfj Fkjnrkj</a></h4>
-          <p class="service-description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata  tarad limino ata . . . . <a href="{{URL::to('java/programming')}}">read more >></a></p>
+          <h4 class="service-title"><a href="">Mobile App Development</a></h4>
+          <p class="service-description">We can help you expand digitally in different kinds of ways. What are you looking for? We create brand identity systems, digital platforms and campaigns that engage today's consumers.<a href=" ">read more >></a></p>
         </div>
       </div>
     </div>

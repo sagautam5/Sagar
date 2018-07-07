@@ -71,6 +71,7 @@
   <script src="{{asset('js/lib/wow/wow.min.js')}}"></script>
   <script src="{{asset('js/lib/stickyjs/sticky.js')}}"></script>
   <script src="{{asset('js/lib/easing/easing.js')}}"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 
   <!-- Template Specisifc Custom Javascript File -->
   <script src="js/custom.js"></script>

@@ -15,7 +15,7 @@
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="sub-title">Who I am ?</h3>
+          <h3 class="sub-title">Who am I ?</h3>
         </div>
       </div>
     </div>

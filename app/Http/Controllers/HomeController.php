@@ -37,10 +37,6 @@ class HomeController extends Controller
         return view('pages.blog');
     }
 
-    public function getWebDevelopment(){
-        return view('pages.web_development');
-    }
-
     public function emailMessage($message){
 
     	$data = [
@@ -62,10 +58,9 @@ class HomeController extends Controller
     }
 
 
-    public function postMessage(MessagePostRequest $request){
+    public function postMessage(Request $request){
 
         $success = true;
-        
         \DB::beginTransaction();
         
         try{
@@ -76,7 +71,6 @@ class HomeController extends Controller
             $success = false;
             \DB::rollback();
         }
-        
         if($success){
             return redirect()->to('/contact')->with('alert-success','Message sent Successfully');
         }else{

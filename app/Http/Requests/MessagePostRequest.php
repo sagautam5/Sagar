@@ -45,7 +45,7 @@ class MessagePostRequest extends FormRequest
             'subject.required' => 'please add subject',
             'message.required' => 'please say something for us',
             'g-recaptcha-response.required' => 'Please ensure that you are a human!',
-            'g-recaptcha-response.recaptcha' => 'Please ensure that you are a human!',
+            // 'g-recaptcha-response.recaptcha' => 'Please ensure that you are a human!',
         ];
     }
 }

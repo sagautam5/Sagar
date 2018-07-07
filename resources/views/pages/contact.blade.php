@@ -18,14 +18,20 @@
         <div class="col-md-12">
           <h3 class="section-title">Contact</h3>
           <div class="section-title-divider"></div>
-          <p class="contact-message">If you have any queries regarding us and our work, feel free to send your message.</p>
+          <p class="contact-message">If you have any queries regarding me and my work, feel free to send your message.</p>
         </div>
       </div>
-      @foreach (['danger', 'warning', 'success', 'info'] as $msg)
-        @if(Session::has('alert-' . $msg))
-          <p class="alert alert-{{ $msg }}" style="text-align:center;">{{ Session::get('alert-' . $msg) }} <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a></p>
-        @endif
-      @endforeach
+      <div class="row">
+        <div class="col-md-12">
+          <div class="col-md-8 col-md-push-2">
+            @foreach (['danger', 'warning', 'success', 'info'] as $msg)
+              @if(Session::has('alert-' . $msg))
+                <p class="alert alert-{{ $msg }}" style="text-align:center; padding-left: 40px; padding-right: 40px;">{{ Session::get('alert-' . $msg) }} <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a></p>
+              @endif
+            @endforeach
+         </div>
+        </div>
+      </div>
       <div class="row">
         <div class="col-md-12">
           <div class="col-md-8 col-md-push-2">
@@ -112,7 +118,8 @@
                 <div class="row">
                   <div class="form-group"> 
                     <div class="col-md-12 captcha">
-                        {!! app('captcha')->display(); !!}
+                        <!-- {!! app('captcha')->display(); !!} -->
+                        <div class="g-recaptcha" data-sitekey="6LdTlWIUAAAAAHSTTFkXWENVXPYdy9w-oCdW6jHQ"></div>
                         @if($errors->has('g-recaptcha-response'))
                             <div class="error">
                               {{$errors->first('g-recaptcha-response')}}
