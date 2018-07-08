@@ -16,7 +16,7 @@
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="section-title"> Services</h3>
+          <h3 class="section-title"> What We do</h3>
           <div class="section-title-divider"></div>
           <!-- <p class="service-quote">"We organize our software development process to meet your project requirements with in your time limit"</p> -->
         </div>
@@ -24,17 +24,19 @@
 
       <div class="row">
         <div class="col-md-4 service-item">
-          <h4 class="service-title"><a>Web App Development</a></h4>
-          <p class="service-description">We design and build general websites like static websites, corporate websites. We build web application with variety of features based on required functionalities with responsive and friendly user interface. We provide affordable website design services, for companies, businesses and individuals. We are able to provide your company or business, large or small with a range of options to ensure we can create the website you require.
-</p>
+            <h4 class="service-item-title">Web App development</h4>
+             <p class="service-description">We design and develop general websites like static websites and functional websites. We also build web application with variety of features and responsive design based on required functionalities. </p>
         </div>
         <div class="col-md-4 service-item">
-          <h4 class="service-title"><a>Software Development</a></h4>
-          <p class="service-description">We build web application based on required functionalities, design responsive and friendly user interface.</p>
+          <h4 class="service-item-title">Software Development</h4>
+          <p class="service-description">We provide quality oriented, affordable and reliable software development services with friendly user interface, for companies, businesses and individuals.</p>
+
         </div>
         <div class="col-md-4 service-item">
-          <h4 class="service-title"><a>Mobile App Development</a></h4>
-          <p class="service-description">We develop applications and implement functionalites using advance Java programming </a></p>
+          
+          <h4 class="service-item-title">Mobile App Development</h4>
+          <p class="service-description">We design and develop variety of mobile applications. We use advanced tools and technology to provide highly customized mobile applications for consumer needs and enterprises.</p>
+           
         </div>
       </div>
     </div>

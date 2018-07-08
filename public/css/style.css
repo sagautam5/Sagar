@@ -474,7 +474,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 2px;
   background: #03C4EB;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 65px;
 }
 
 /* Web Development Section */
@@ -571,21 +571,21 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #services .service-item {
+  text-align: center;
   margin-bottom: 20px;
 }
 
 #services .service-icon {
-  float: left;
+  float: center;
   background: #03C4EB;
-  padding: 16px;
-  border-radius: 50%;
+  padding: 25px;
   transition: 0.5s;
   border: 1px solid #03C4EB;
 }
 
 #services .service-icon i {
   color: #fff;
-  font-size: 24px;
+  font-size: 60px;
 }
 
 #services .service-item:hover .service-icon {
@@ -597,10 +597,22 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #services .service-title {
-  margin-left: 80px;
+  margin-left: 0px;
   font-weight: 700;
   margin-bottom: 15px;
   text-transform: uppercase;
+}
+
+#services .service-item-title{
+  font-weight: 700;
+  margin-left: 0px;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  text-align: left;
+  border-bottom: 1px solid #03C4EB;
+  color: #111;
+
 }
 
 #services .service-title a {
@@ -608,7 +620,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #services .service-description {
-  margin-left: 80px;
   line-height: 24px;
   text-align: justify;
 }

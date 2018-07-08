@@ -35,7 +35,7 @@
             I’ve previously worked as a PHP Developer at Business Veins Pvt. Ltd. for nearly one year.
 
           <p class="about-text">I design and build static websites, functional websites and web applications. I also like to 
-            work on Java Programming Language <br/> . . . . . <a href="{{URL::to('/about')}}" target="_blank"> read more >> </a>
+            work on . . . . . <a href="{{URL::to('/about')}}" target="_blank"> read more >> </a>
           </p>
           <p class="about-text"></p>
         </div>
@@ -58,19 +58,23 @@
 
       <div class="row">
         <div class="col-md-4 service-item">
-          <div class="service-icon"><i class="fa fa-desktop"></i></div>
-          <h4 class="service-title"><a href="{{URL::to('web/development')}}">Web App Development</a></h4>
+          <div class="service-icon">
+            <i class="fa fa-desktop"></i>
+            <h4 class="service-title"><a href="{{URL::to('/services')}}">Web App Development</a></h4>
+          </div>
         </div>
         <div class="col-md-4 service-item">
-          <div class="service-icon"><i class="fa fa-paper-plane"></i></div>
-          <h4 class="service-title"><a href="">Software Development</a></h4>
-          <p class="service-description">We can help you expand digitally in different kinds of ways. What are you looking for? We create brand identity systems, digital platforms and campaigns that engage today's consumers.<a href="">read more >> </a></p>
+          <div class="service-icon">
+            <i class="fa fa-cogs"></i>
+            <h4 class="service-title"><a href="{{URL::to('/services')}}">Software Development</a></h4>
+          </div>
         </div>
         <div class="col-md-4 service-item">
-          <div class="service-icon"><i class="fa fa-bar-chart"></i></div>
-          <h4 class="service-title"><a href="">Mobile App Development</a></h4>
-          <p class="service-description">We can help you expand digitally in different kinds of ways. What are you looking for? We create brand identity systems, digital platforms and campaigns that engage today's consumers.<a href=" ">read more >></a></p>
-        </div>
+          <div class="service-icon">
+            <i class="fa fa-mobile" aria-hidden="true"></i>
+            <h4 class="service-title"><a href="{{URL::to('/services')}}">Mobile App Development</a></h4>
+          </div>
+          </div>
       </div>
     </div>
   </section>
