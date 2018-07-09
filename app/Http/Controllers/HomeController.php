@@ -30,7 +30,7 @@ class HomeController extends Controller
     }
 
     public function getProjects(){
-        return view('pages.projects');
+        return view('pages.project');
     }
 
     public function getBlog(){

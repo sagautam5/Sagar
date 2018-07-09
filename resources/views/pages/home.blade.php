@@ -57,24 +57,30 @@
       </div>
 
       <div class="row">
-        <div class="col-md-4 service-item">
-          <div class="service-icon">
-            <i class="fa fa-desktop"></i>
-            <h4 class="service-title"><a href="{{URL::to('/services')}}">Web App Development</a></h4>
+        <a  href="{{URL::to('/services')}}">
+          <div class="col-md-4 service-item">
+              <div class="service-icon">
+                <i class="fa fa-desktop"></i>
+                <h4 class="service-title"><a>Web App Development</a></h4>
+              </div>
           </div>
-        </div>
-        <div class="col-md-4 service-item">
-          <div class="service-icon">
-            <i class="fa fa-cogs"></i>
-            <h4 class="service-title"><a href="{{URL::to('/services')}}">Software Development</a></h4>
+        </a>
+        <a href="{{URL::to('/services')}}">
+          <div class="col-md-4 service-item">
+            <div class="service-icon">
+              <i class="fa fa-cogs"></i>
+              <h4 class="service-title"><a>Software Development</a></h4>
+            </div>
           </div>
-        </div>
-        <div class="col-md-4 service-item">
-          <div class="service-icon">
-            <i class="fa fa-mobile" aria-hidden="true"></i>
-            <h4 class="service-title"><a href="{{URL::to('/services')}}">Mobile App Development</a></h4>
-          </div>
-          </div>
+        </a>
+        <a href="{{URL::to('/services')}}">
+          <div class="col-md-4 service-item">
+            <div class="service-icon">
+              <i class="fa fa-mobile" aria-hidden="true"></i>
+              <h4 class="service-title"><a>Mobile App Development</a></h4>
+            </div>
+            </div>
+        </a>
       </div>
     </div>
   </section>
